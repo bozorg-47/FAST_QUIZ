@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Member(models.Model):
+  football_quiz = models.CharField(max_length=255)
+  general_quiz = models.CharField(max_length=255)
